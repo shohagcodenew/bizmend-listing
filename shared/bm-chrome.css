@@ -1,0 +1,141 @@
+/* ============================================================
+   BizMend shared site chrome (global header + footer)
+   Namespaced under #bm-header / #bm-footer with bm- prefixed
+   classes only, so it never collides with any individual page's
+   own stylesheet. Loaded on every page via a relative path, e.g.
+   <link rel="stylesheet" href="../shared/bm-chrome.css">
+   ============================================================ */
+
+#bm-header, #bm-footer, #bm-header *, #bm-footer * {
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+#bm-header a, #bm-footer a { text-decoration: none; color: inherit; }
+#bm-header ul, #bm-footer ul { list-style: none; margin: 0; padding: 0; }
+#bm-header button { font-family: inherit; cursor: pointer; }
+
+/* ---------- Header ---------- */
+#bm-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #e2e8e6;
+}
+#bm-header.bm-scrolled { box-shadow: 0 4px 18px rgba(15, 23, 42, .08); }
+
+.bm-header-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.bm-logo { display: flex; align-items: center; gap: 9px; flex-shrink: 0; }
+.bm-logo-word { font-size: 18px; font-weight: 800; color: #0f172a; letter-spacing: -.01em; }
+.bm-logo-word span { color: #0d9488; }
+
+.bm-main-nav { display: flex; align-items: center; gap: 26px; }
+.bm-main-nav a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  transition: color .15s ease;
+  white-space: nowrap;
+}
+.bm-main-nav a:hover, .bm-main-nav a.bm-active { color: #0d9488; }
+
+.bm-header-actions { display: flex; align-items: center; gap: 10px; }
+.bm-hamburger {
+  display: none;
+  width: 36px; height: 36px;
+  border: none; background: none;
+  flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+  border-radius: 8px;
+}
+.bm-hamburger:hover { background: #f1f5f4; }
+.bm-hamburger span { width: 19px; height: 2px; background: #0f172a; border-radius: 2px; transition: transform .2s ease, opacity .2s ease; }
+.bm-hamburger.bm-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.bm-hamburger.bm-open span:nth-child(2) { opacity: 0; }
+.bm-hamburger.bm-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.bm-mobile-nav {
+  display: none;
+  flex-direction: column;
+  padding: 8px 24px 20px;
+  border-top: 1px solid #e2e8e6;
+  background: #fff;
+  gap: 4px;
+}
+.bm-mobile-nav a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+  padding: 11px 4px;
+  border-bottom: 1px solid #f1f5f4;
+}
+.bm-mobile-nav.bm-open { display: flex; }
+
+@media (max-width: 880px) {
+  .bm-main-nav { display: none; }
+  .bm-hamburger { display: flex; }
+}
+
+/* ---------- Footer ---------- */
+#bm-footer {
+  background: #0b1220;
+  color: #cbd5e1;
+  margin-top: 0;
+}
+.bm-footer-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px 24px 32px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+.bm-footer-brand p { font-size: 13.5px; color: #94a3b8; line-height: 1.6; margin: 12px 0 0; max-width: 260px; }
+.bm-footer-brand .bm-logo-word { color: #fff; }
+.bm-footer-brand .bm-logo-word span { color: #5eead4; }
+
+.bm-footer-col h4 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin: 0 0 14px;
+}
+.bm-footer-col { display: flex; flex-direction: column; gap: 10px; }
+.bm-footer-col a { font-size: 13.5px; color: #cbd5e1; transition: color .15s ease; }
+.bm-footer-col a:hover { color: #5eead4; }
+
+.bm-footer-bottom {
+  border-top: 1px solid rgba(148, 163, 184, .15);
+  padding: 20px 24px 28px;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12.5px;
+  color: #64748b;
+}
+.bm-footer-bottom a { color: #64748b; }
+.bm-footer-bottom a:hover { color: #cbd5e1; }
+.bm-footer-legal { display: flex; gap: 18px; }
+
+@media (max-width: 900px) {
+  .bm-footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .bm-footer-inner { grid-template-columns: 1fr; }
+}

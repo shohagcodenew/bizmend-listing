@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Services | BizMend</title>
+<meta name="description" content="Providers and agencies businesses hire to execute and scale — browsed and compared on BizMend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../shared/bm-chrome.css">
+</head>
+<body>
+
+<header id="bm-header">
+  <div class="bm-header-inner">
+    <a href="../index.html" class="bm-logo" aria-label="BizMend home">
+      <svg width="28" height="28" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="30" height="30" rx="8" fill="#0d9488"/>
+        <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+        <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="bm-logo-word">Biz<span>Mend</span></span>
+    </a>
+    <nav class="bm-main-nav" aria-label="Primary">
+      <a href="../companies/index.html">Companies</a>
+      <a href="../founders/index.html">Founders</a>
+      <a href="../products/index.html">Products</a>
+      <a href="../services/index.html" class="bm-active">Services</a>
+      <a href="../topics/index.html">Topics</a>
+      <a href="../industries/index.html">Industries</a>
+      <a href="../countries/index.html">Countries</a>
+      <a href="../cities/index.html">Cities</a>
+      <a href="../reports/index.html">Reports</a>
+      <a href="../insights/index.html">Insights</a>
+    </nav>
+    <div class="bm-header-actions">
+      <button class="bm-hamburger" id="bmHamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="bm-mobile-nav" id="bmMobileNav">
+    <a href="../index.html">Home</a>
+    <a href="../companies/index.html">Companies</a>
+    <a href="../founders/index.html">Founders</a>
+    <a href="../products/index.html">Products</a>
+    <a href="../services/index.html">Services</a>
+    <a href="../topics/index.html">Topics</a>
+    <a href="../industries/index.html">Industries</a>
+    <a href="../countries/index.html">Countries</a>
+    <a href="../cities/index.html">Cities</a>
+    <a href="../reports/index.html">Reports</a>
+    <a href="../insights/index.html">Insights</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero service-hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <h1>Explore Services</h1>
+      <p>Discover professional services and solutions to grow, scale and simplify your business—across every stage of the journey.</p>
+
+      <div class="hero-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input id="heroSearch" type="text" placeholder="Search services, providers, industries...">
+        <button class="hero-search-btn-text" id="heroSearchBtn">Search</button>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#explorer" class="btn btn-primary">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+          Browse All Services
+        </a>
+        <a href="#" class="btn btn-outline">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Suggest a Service
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <img src="assets/2121.png" alt="Glass icon cards for business services — growth, legal, marketing, software, consulting, healthcare, logistics, real estate and e-commerce — over a connected world map" class="hero-photo">
+    </div>
+  </div>
+</section>
+
+<!-- ===== SNAPSHOT ===== -->
+<section class="snapshot">
+  <div class="container">
+    <div class="snapshot-panel">
+      <div class="snapshot-grid" id="snapshotGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICE EXPLORER ===== -->
+<section class="explorer" id="explorer">
+  <div class="container">
+    <div class="explorer-head">
+      <div>
+        <h2>Service Explorer</h2>
+        <p>Search and explore services to find the right match for your needs.</p>
+      </div>
+    </div>
+
+    <div class="filters-bar">
+      <div class="filter-search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input id="filterSearch" type="text" placeholder="Search by service...">
+      </div>
+      <select class="filter-select" id="filterCategory">
+        <option value="">Category</option>
+      </select>
+      <select class="filter-select" id="filterProviderType">
+        <option value="">Provider Type</option>
+      </select>
+      <select class="filter-select" id="filterIndustry">
+        <option value="">Industry</option>
+      </select>
+      <select class="filter-select" id="filterTopic">
+        <option value="">Topic</option>
+      </select>
+      <select class="filter-select" id="filterCountry">
+        <option value="">Country</option>
+      </select>
+      <div class="sort-group">
+        <select id="sortBy">
+          <option value="popular">Sort by: Popular</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+          <option value="providers">Most Providers</option>
+        </select>
+      </div>
+      <button class="clear-all" id="clearAll">
+        <svg viewBox="0 0 24 24"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 105.64 18.36L1 20M23 4l-4.64 4.64"/></svg>
+        Clear all
+      </button>
+    </div>
+
+    <div class="service-grid" id="serviceGrid"></div>
+
+    <div class="pagination" id="servicePagination"></div>
+  </div>
+</section>
+
+<!-- ===== TRENDING / POPULAR SERVICES ===== -->
+<section class="two-col-section">
+  <div class="container">
+    <div class="panel trending-panel">
+      <div class="section-head-row">
+        <h2>Trending / Popular Services</h2>
+        <a href="#" class="view-all-link">View All
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div id="trendingList" class="trending-list numbered"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECENTLY UPDATED SERVICES ===== -->
+<section class="two-col-section">
+  <div class="container">
+    <div class="panel">
+      <h2>Recently Updated Services</h2>
+      <div class="updated-grid" id="updatedGrid"></div>
+      <div class="view-all-wrap tight">
+        <button class="btn btn-outline" id="viewAllUpdatesBtn">View All Updates
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES BY COMPANY / PROVIDER ===== -->
+<section class="top-companies">
+  <div class="container">
+    <div class="section-head-row">
+      <h2>Services by Company / Provider</h2>
+      <a href="#" class="view-all-link">View All
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="provider-row" id="providerRow"></div>
+  </div>
+</section>
+
+<!-- ===== TOP COMPANIES BY SERVICE ===== -->
+<section class="top-companies">
+  <div class="container">
+    <div class="section-head-row">
+      <h2>Top Companies by Service</h2>
+      <a href="#" class="view-all-link">View All
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="top-service-grid" id="topServiceGrid"></div>
+  </div>
+</section>
+
+<!-- ===== LATEST SERVICE INSIGHTS ===== -->
+<section class="insights">
+  <div class="container">
+    <div class="section-head-row">
+      <h2>Latest Service Insights</h2>
+      <a href="#" class="view-all-link">View All Insights
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="insights-grid five" id="insightsGrid"></div>
+  </div>
+</section>
+
+<!-- ===== BROWSE BY INDUSTRY ===== -->
+<section class="browse-by">
+  <div class="container">
+    <div class="browse-head-row">
+      <h2>Browse Services by Industry</h2>
+    </div>
+    <div class="chip-row" id="industryChips"></div>
+  </div>
+</section>
+
+<!-- ===== BROWSE BY TOPIC ===== -->
+<section class="browse-by">
+  <div class="container">
+    <div class="browse-head-row">
+      <h2>Browse Services by Topic</h2>
+    </div>
+    <div class="chip-row" id="topicChips"></div>
+  </div>
+</section>
+
+<!-- ===== BROWSE BY COUNTRY ===== -->
+<section class="browse-by">
+  <div class="container">
+    <div class="browse-head-row">
+      <h2>Browse Services by Country</h2>
+    </div>
+    <div class="chip-row" id="countryChips"></div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq">
+  <div class="container">
+    <div class="faq-card">
+      <h2>Service FAQs</h2>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div class="cta-left">
+      <div class="cta-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0012 3z"/></svg>
+      </div>
+      <div>
+        <strong>Suggest / Update a Service</strong>
+        <p>Help our community by suggesting a new service or updating existing information. Together, we build a better BizMend.</p>
+      </div>
+    </div>
+    <div class="cta-right">
+      <a href="#" class="btn btn-primary">Suggest a Service
+        <svg viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </a>
+      <a href="#" class="btn btn-outline">Update a Service
+        <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer id="bm-footer">
+  <div class="bm-footer-inner">
+    <div class="bm-footer-brand">
+      <a href="../index.html" class="bm-logo" aria-label="BizMend home">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect width="30" height="30" rx="8" fill="#0d9488"/>
+          <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+          <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span class="bm-logo-word">Biz<span>Mend</span></span>
+      </a>
+      <p>Connected business discovery and intelligence platform — companies, founders, topics, markets, reports and insights in one place.</p>
+    </div>
+    <nav class="bm-footer-col" aria-label="Discover">
+      <h4>Discover</h4>
+      <a href="../companies/index.html">Companies</a>
+      <a href="../founders/index.html">Founders</a>
+      <a href="../products/index.html">Products</a>
+      <a href="../services/index.html">Services</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="Explore">
+      <h4>Explore</h4>
+      <a href="../topics/index.html">Topics</a>
+      <a href="../industries/index.html">Industries</a>
+      <a href="../countries/index.html">Countries</a>
+      <a href="../cities/index.html">Cities</a>
+      <a href="../reports/index.html">Reports</a>
+      <a href="../insights/index.html">Insights</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="Featured profiles">
+      <h4>Featured Profiles</h4>
+      <a href="../companies/openai/index.html">OpenAI</a>
+      <a href="../founders/sam-altman/index.html">Sam Altman</a>
+      <a href="../countries/united-states/index.html">United States</a>
+      <a href="../cities/new-york-city/index.html">New York City</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="More">
+      <h4>More</h4>
+      <a href="../topics/digital-banking/index.html">Digital Banking Topic</a>
+      <a href="../industries/artificial-intelligence-software/index.html">AI Software Industry</a>
+      <a href="../seo/top-digital-marketing-companies-in-dhaka/index.html">Dhaka Marketing Companies</a>
+    </nav>
+  </div>
+  <div class="bm-footer-bottom">
+    <span>© <span id="bmFooterYear"></span> BizMend. All rights reserved.</span>
+    <div class="bm-footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="../shared/bm-chrome.js"></script>
+</body>
+</html>

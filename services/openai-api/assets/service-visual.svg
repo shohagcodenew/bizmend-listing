@@ -1,0 +1,80 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OpenAI API developer platform illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.32" r="0.7">
+      <stop offset="0" stop-color="#0d9488" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243146"/>
+      <stop offset="1" stop-color="#1a2436"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#glow)"/>
+
+  <!-- network mesh: endpoint nodes fanning into the API -->
+  <g stroke="#2dd4bf" stroke-opacity="0.22" stroke-width="1.5" fill="none">
+    <path d="M70 120 L190 120 L230 160 L230 230"/>
+    <path d="M70 420 L190 420 L230 380 L230 300"/>
+    <path d="M890 130 L780 130 L740 170 L740 230"/>
+    <path d="M890 430 L780 430 L740 390 L740 300"/>
+  </g>
+  <g fill="#2dd4bf" fill-opacity="0.55">
+    <circle cx="70" cy="120" r="4"/>
+    <circle cx="70" cy="420" r="4"/>
+    <circle cx="890" cy="130" r="4"/>
+    <circle cx="890" cy="430" r="4"/>
+    <circle cx="230" cy="230" r="3.5"/>
+    <circle cx="230" cy="300" r="3.5"/>
+    <circle cx="740" cy="230" r="3.5"/>
+    <circle cx="740" cy="300" r="3.5"/>
+  </g>
+  <g font-family="Consolas, Menlo, monospace" font-size="11" fill="#7ee8d8" fill-opacity="0.65">
+    <text x="82" y="110">app.py</text>
+    <text x="82" y="416">agent.ts</text>
+    <text x="792" y="120">mobile SDK</text>
+    <text x="792" y="420">dashboard</text>
+  </g>
+
+  <!-- central request/response API panel -->
+  <g transform="translate(230,110)">
+    <rect x="0" y="0" width="500" height="320" rx="18" fill="url(#panel)" stroke="#0d9488" stroke-opacity="0.35"/>
+    <rect x="0" y="0" width="500" height="42" rx="18" fill="#111827"/>
+    <rect x="0" y="24" width="500" height="18" fill="#111827"/>
+    <circle cx="26" cy="21" r="6" fill="#f87171"/>
+    <circle cx="46" cy="21" r="6" fill="#fbbf24"/>
+    <circle cx="66" cy="21" r="6" fill="#34d399"/>
+    <text x="250" y="26" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#94a3b8">OpenAI API</text>
+
+    <!-- request -->
+    <g font-family="Consolas, Menlo, monospace" font-size="14">
+      <text x="28" y="82" fill="#60a5fa">POST</text>
+      <text x="78" y="82" fill="#94a3b8">/v1/responses</text>
+      <rect x="28" y="96" width="444" height="66" rx="8" fill="#0f172a" fill-opacity="0.55"/>
+      <text x="42" y="118" fill="#94a3b8">{ <tspan fill="#f472b6">"model"</tspan>: <tspan fill="#34d399">"gpt-5"</tspan>, </text>
+      <text x="42" y="140" fill="#94a3b8">  <tspan fill="#f472b6">"input"</tspan>: <tspan fill="#34d399">"Summarize this document"</tspan> }</text>
+    </g>
+
+    <!-- response -->
+    <g font-family="Consolas, Menlo, monospace" font-size="14" transform="translate(0,90)">
+      <text x="28" y="90" fill="#2dd4bf">200 OK</text>
+      <rect x="28" y="104" width="444" height="66" rx="8" fill="#0d9488" fill-opacity="0.12"/>
+      <text x="42" y="126" fill="#94a3b8">{ <tspan fill="#f472b6">"output_text"</tspan>: <tspan fill="#34d399">"Here's a summary…"</tspan></text>
+      <text x="42" y="148" fill="#94a3b8">  <tspan fill="#f472b6">"usage"</tspan>: { <tspan fill="#fbbf24">tokens: 312</tspan> } }</text>
+    </g>
+
+    <text x="28" y="292" fill="#2dd4bf" font-family="Segoe UI, sans-serif" font-size="14">⚡ Response delivered · request verified</text>
+  </g>
+
+  <!-- endpoint / plug node -->
+  <g transform="translate(742,300)">
+    <circle r="34" fill="#0d9488" fill-opacity="0.18"/>
+    <circle r="20" fill="#0d9488"/>
+    <path d="M-7 -6 L-7 2 a7 7 0 0 0 14 0 L7 -6 M-3 -9 L-3 -6 M3 -9 L3 -6 M0 9 L0 13" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

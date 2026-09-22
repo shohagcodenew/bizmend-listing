@@ -1,0 +1,131 @@
+/* ============================================================
+   BizMend premium smart-search dropdown. Attaches to any input
+   with class "bm-smart-search-input" whose closest
+   ".bm-smart-search" wrapper provides the positioning context.
+   Namespaced under .bm-search- to avoid collisions.
+   ============================================================ */
+
+.bm-smart-search { position: relative; }
+
+.bm-search-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #e2e8e6;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px -12px rgba(15, 23, 42, .22), 0 4px 12px rgba(15,23,42,.08);
+  padding: 8px;
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 500;
+  display: none;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+.bm-smart-search.bm-search-open .bm-search-panel { display: block; }
+
+.bm-search-hint {
+  padding: 10px 14px 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.bm-search-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.bm-search-result:hover, .bm-search-result.bm-search-active {
+  background: #e6f5f3;
+}
+.bm-search-type-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.bm-search-result-text { flex: 1; min-width: 0; }
+.bm-search-result-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bm-search-verified {
+  display: inline-flex;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #0d9488;
+  color: #fff;
+  font-size: 9px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.bm-search-result-meta {
+  font-size: 12px;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+}
+.bm-search-result-type {
+  flex-shrink: 0;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: #0b7d72;
+  background: #e6f5f3;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.bm-search-empty {
+  padding: 24px 16px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13.5px;
+}
+
+.bm-search-footer {
+  border-top: 1px solid #eef1f0;
+  margin-top: 4px;
+  padding: 8px 12px 4px;
+  font-size: 11.5px;
+  color: #94a3b8;
+  display: flex;
+  justify-content: space-between;
+}
+.bm-search-footer kbd {
+  background: #f1f5f4;
+  border: 1px solid #e2e8e6;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-family: inherit;
+  font-size: 10.5px;
+  margin: 0 2px;
+}
+
+@media (max-width: 640px) {
+  .bm-search-panel { max-height: 320px; }
+}
