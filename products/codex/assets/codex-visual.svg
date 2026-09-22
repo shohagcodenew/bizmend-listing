@@ -1,0 +1,66 @@
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Codex AI coding agent illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#0d9488" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243146"/>
+      <stop offset="1" stop-color="#1a2436"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect width="960" height="540" fill="url(#glow)"/>
+
+  <!-- faint circuit lines connecting nodes -->
+  <g stroke="#2dd4bf" stroke-opacity="0.22" stroke-width="1.5" fill="none">
+    <path d="M60 460 L220 460 L260 420 L420 420"/>
+    <path d="M900 90 L760 90 L720 130 L560 130"/>
+    <path d="M120 90 L120 160 L180 220"/>
+    <path d="M860 470 L860 400 L800 350"/>
+  </g>
+  <g fill="#2dd4bf" fill-opacity="0.55">
+    <circle cx="60" cy="460" r="4"/>
+    <circle cx="420" cy="420" r="4"/>
+    <circle cx="900" cy="90" r="4"/>
+    <circle cx="560" cy="130" r="4"/>
+    <circle cx="120" cy="90" r="4"/>
+    <circle cx="180" cy="220" r="4"/>
+    <circle cx="860" cy="470" r="4"/>
+    <circle cx="800" cy="350" r="4"/>
+  </g>
+
+  <!-- central floating code-window panel -->
+  <g transform="translate(230,120)">
+    <rect x="0" y="0" width="500" height="300" rx="18" fill="url(#panel)" stroke="#0d9488" stroke-opacity="0.35"/>
+    <rect x="0" y="0" width="500" height="42" rx="18" fill="#111827"/>
+    <rect x="0" y="24" width="500" height="18" fill="#111827"/>
+    <circle cx="26" cy="21" r="6" fill="#f87171"/>
+    <circle cx="46" cy="21" r="6" fill="#fbbf24"/>
+    <circle cx="66" cy="21" r="6" fill="#34d399"/>
+    <text x="250" y="26" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#94a3b8">Codex</text>
+
+    <!-- code lines -->
+    <g font-family="Consolas, Menlo, monospace" font-size="15">
+      <text x="28" y="86" fill="#f472b6">def <tspan fill="#60a5fa">validate_signup</tspan><tspan fill="#94a3b8">(user):</tspan></text>
+      <text x="46" y="114" fill="#94a3b8">if <tspan fill="#f472b6">not</tspan> user.email:</text>
+      <text x="64" y="142" fill="#34d399" text-decoration="line-through" opacity="0.55">return False</text>
+      <rect x="46" y="152" width="360" height="26" rx="5" fill="#34d399" fill-opacity="0.12"/>
+      <text x="64" y="170" fill="#34d399">raise ValueError("email required")</text>
+      <text x="46" y="198" fill="#94a3b8">return user.is_valid()</text>
+      <text x="28" y="240" fill="#2dd4bf" font-family="Segoe UI, sans-serif" font-size="14">✓ 3 tests passed · ready for review</text>
+    </g>
+  </g>
+
+  <!-- agent node marker -->
+  <g transform="translate(742,300)">
+    <circle r="34" fill="#0d9488" fill-opacity="0.18"/>
+    <circle r="20" fill="#0d9488"/>
+    <path d="M-8 0 L-2 7 L10 -8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

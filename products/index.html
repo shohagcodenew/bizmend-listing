@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Products | BizMend</title>
+<meta name="description" content="Software and platforms companies use to run and grow their business — browsed and compared on BizMend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../shared/bm-chrome.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="bm-header">
+  <div class="bm-header-inner">
+    <a href="../index.html" class="bm-logo" aria-label="BizMend home">
+      <svg width="28" height="28" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="30" height="30" rx="8" fill="#0d9488"/>
+        <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+        <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="bm-logo-word">Biz<span>Mend</span></span>
+    </a>
+    <nav class="bm-main-nav" aria-label="Primary">
+      <a href="../companies/index.html">Companies</a>
+      <a href="../founders/index.html">Founders</a>
+      <a href="../products/index.html" class="bm-active">Products</a>
+      <a href="../services/index.html">Services</a>
+      <a href="../topics/index.html">Topics</a>
+      <a href="../industries/index.html">Industries</a>
+      <a href="../countries/index.html">Countries</a>
+      <a href="../cities/index.html">Cities</a>
+      <a href="../reports/index.html">Reports</a>
+      <a href="../insights/index.html">Insights</a>
+    </nav>
+    <div class="bm-header-actions">
+      <button class="bm-hamburger" id="bmHamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="bm-mobile-nav" id="bmMobileNav">
+    <a href="../index.html">Home</a>
+    <a href="../companies/index.html">Companies</a>
+    <a href="../founders/index.html">Founders</a>
+    <a href="../products/index.html">Products</a>
+    <a href="../services/index.html">Services</a>
+    <a href="../topics/index.html">Topics</a>
+    <a href="../industries/index.html">Industries</a>
+    <a href="../countries/index.html">Countries</a>
+    <a href="../cities/index.html">Cities</a>
+    <a href="../reports/index.html">Reports</a>
+    <a href="../insights/index.html">Insights</a>
+  </div>
+</header>
+
+<div class="container page">
+
+  <!-- Explore Products -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1 class="section-title">Explore Products</h1>
+        <p class="section-sub">Discover the world's best products, platforms, apps, tools, and business solutions all in one place.</p>
+
+        <div class="hero-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="heroSearch" type="text" placeholder="Search products, companies, topics...">
+          <button class="hero-search-btn-text" id="heroSearchBtn">Search</button>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#explorer" class="btn btn-primary"><i class="fa-solid fa-table-cells-large"></i> Browse All Products</a>
+          <a href="#suggest-product" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Suggest a Product</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="assets/134.png" alt="Desk flat-lay of many everyday products — laptop, camera, watch, shoes, bag, skincare" class="hero-photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Landscape Snapshot -->
+  <section class="snapshot">
+    <div class="snapshot-panel">
+      <div class="snapshot-grid" id="snapshotGrid"></div>
+    </div>
+  </section>
+
+  <!-- Product Explorer -->
+  <section class="explorer" id="explorer">
+    <h2 class="section-title">Product Explorer</h2>
+
+    <div class="filters-bar">
+      <div class="filter-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="productSearch" type="text" placeholder="Search products...">
+      </div>
+      <select class="filter-select" id="filterIndustry">
+        <option value="">All Industries</option>
+        <option>Fintech</option><option>SaaS</option><option>E-commerce</option>
+      </select>
+      <select class="filter-select" id="filterTopic">
+        <option value="">All Topics</option>
+        <option>AI</option><option>Payments</option><option>Productivity</option>
+      </select>
+      <select class="filter-select" id="filterCountry">
+        <option value="">All Countries</option>
+        <option>United States</option><option>Canada</option><option>United Kingdom</option>
+      </select>
+      <select class="filter-select" id="filterCompany">
+        <option value="">All Companies</option>
+      </select>
+      <div class="sort-group">
+        Sort:
+        <select id="sortBy">
+          <option value="popular">Popular</option>
+          <option value="newest">Newest</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+      <button class="clear-all" id="clearAll">
+        <i class="fa-solid fa-rotate-left"></i> Clear All
+      </button>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+
+    <div class="pagination" id="pagination"></div>
+  </section>
+
+  <!-- Trending / Popular Products -->
+  <section class="two-col-section">
+    <h2 class="section-title">Trending / Popular Products</h2>
+    <div class="panel trending-panel">
+      <div id="trendingRow" class="trending-grid"></div>
+    </div>
+  </section>
+
+  <!-- Recently Updated Products -->
+  <section class="two-col-section">
+    <h2 class="section-title">Recently Updated Products</h2>
+    <div class="panel">
+      <div class="updated-list" id="updatedList"></div>
+    </div>
+  </section>
+
+  <!-- Products by Company -->
+  <section class="top-companies">
+    <h2 class="section-title">Products by Company</h2>
+    <div class="company-tabs-row">
+      <div class="company-tabs" id="companyTabs"></div>
+      <div class="filter-search company-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="companySearch" list="allCompaniesList" placeholder="Search any company...">
+        <datalist id="allCompaniesList"></datalist>
+      </div>
+    </div>
+    <div class="company-grid" id="companyProducts"></div>
+    <a href="#" class="view-all-link" id="viewAllLink">View all OpenAI products <i class="fa-solid fa-arrow-right"></i></a>
+  </section>
+
+  <!-- Latest Product Insights -->
+  <section class="insights">
+    <h2 class="section-title">Latest Product Insights</h2>
+    <div class="insights-grid" id="insightRow"></div>
+  </section>
+
+  <!-- Browse Products by Topic -->
+  <section class="browse-by">
+    <h2 class="section-title">Browse Products by Topic</h2>
+    <div class="filter-search topic-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input id="topicSearch" placeholder="Search topics...">
+    </div>
+    <div class="chip-row chip-row-4" id="topicGrid"></div>
+  </section>
+
+  <!-- Browse Products by Country -->
+  <section class="browse-by">
+    <h2 class="section-title">Browse Products by Country</h2>
+    <div class="chip-row" id="countryRow"></div>
+  </section>
+
+  <!-- Product FAQs (kept vertical / single column as requested) -->
+  <section class="faq">
+    <h2 class="section-title">Product FAQs</h2>
+    <div class="faq-card">
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- Suggest / Update a Product -->
+  <section class="cta-banner" id="suggest-product">
+    <div class="cta-inner">
+      <div class="cta-left">
+        <div class="cta-icon"><i class="fa-solid fa-paper-plane"></i></div>
+        <div>
+          <strong>Help build the most comprehensive product directory</strong>
+          <p>Know a great product that's not listed? Or see something that needs an update? Your contributions help the community make better decisions.</p>
+        </div>
+      </div>
+      <div class="cta-right">
+        <a href="#" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Suggest a Product</a>
+        <a href="#" class="btn btn-outline"><i class="fa-solid fa-pen"></i> Update a Product</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer id="bm-footer">
+  <div class="bm-footer-inner">
+    <div class="bm-footer-brand">
+      <a href="../index.html" class="bm-logo" aria-label="BizMend home">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect width="30" height="30" rx="8" fill="#0d9488"/>
+          <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+          <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span class="bm-logo-word">Biz<span>Mend</span></span>
+      </a>
+      <p>Connected business discovery and intelligence platform — companies, founders, topics, markets, reports and insights in one place.</p>
+    </div>
+    <nav class="bm-footer-col" aria-label="Discover">
+      <h4>Discover</h4>
+      <a href="../companies/index.html">Companies</a>
+      <a href="../founders/index.html">Founders</a>
+      <a href="../products/index.html">Products</a>
+      <a href="../services/index.html">Services</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="Explore">
+      <h4>Explore</h4>
+      <a href="../topics/index.html">Topics</a>
+      <a href="../industries/index.html">Industries</a>
+      <a href="../countries/index.html">Countries</a>
+      <a href="../cities/index.html">Cities</a>
+      <a href="../reports/index.html">Reports</a>
+      <a href="../insights/index.html">Insights</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="Featured profiles">
+      <h4>Featured Profiles</h4>
+      <a href="../companies/openai/index.html">OpenAI</a>
+      <a href="../founders/sam-altman/index.html">Sam Altman</a>
+      <a href="../countries/united-states/index.html">United States</a>
+      <a href="../cities/new-york-city/index.html">New York City</a>
+    </nav>
+    <nav class="bm-footer-col" aria-label="More">
+      <h4>More</h4>
+      <a href="../topics/digital-banking/index.html">Digital Banking Topic</a>
+      <a href="../industries/artificial-intelligence-software/index.html">AI Software Industry</a>
+      <a href="../seo/top-digital-marketing-companies-in-dhaka/index.html">Dhaka Marketing Companies</a>
+    </nav>
+  </div>
+  <div class="bm-footer-bottom">
+    <span>© <span id="bmFooterYear"></span> BizMend. All rights reserved.</span>
+    <div class="bm-footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="../shared/bm-chrome.js"></script>
+</body>
+</html>

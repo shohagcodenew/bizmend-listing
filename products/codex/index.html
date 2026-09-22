@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codex by OpenAI — Product Profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/bm-chrome.css">
+</head>
+<body>
+
+<header id="bm-header">
+  <div class="bm-header-inner">
+    <a href="../../index.html" class="bm-logo" aria-label="BizMend home">
+      <svg width="28" height="28" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="30" height="30" rx="8" fill="#0d9488"/>
+        <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+        <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+        <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <span class="bm-logo-word">Biz<span>Mend</span></span>
+    </a>
+
+    <nav class="bm-main-nav" aria-label="Primary">
+      <a href="../../companies/index.html">Companies</a>
+      <a href="../../founders/index.html">Founders</a>
+      <a href="../../products/index.html" class="bm-active">Products</a>
+      <a href="../../services/index.html">Services</a>
+      <a href="../../topics/index.html">Topics</a>
+      <a href="../../industries/index.html">Industries</a>
+      <a href="../../countries/index.html">Countries</a>
+      <a href="../../cities/index.html">Cities</a>
+      <a href="../../reports/index.html">Reports</a>
+      <a href="../../insights/index.html">Insights</a>
+    </nav>
+
+    <div class="bm-header-actions">
+      <button class="bm-hamburger" id="bmHamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="bm-mobile-nav" id="bmMobileNav">
+    <a href="../../index.html">Home</a>
+    <a href="../../companies/index.html">Companies</a>
+    <a href="../../founders/index.html">Founders</a>
+    <a href="../../products/index.html">Products</a>
+    <a href="../../services/index.html">Services</a>
+    <a href="../../topics/index.html">Topics</a>
+    <a href="../../industries/index.html">Industries</a>
+    <a href="../../countries/index.html">Countries</a>
+    <a href="../../cities/index.html">Cities</a>
+    <a href="../../reports/index.html">Reports</a>
+    <a href="../../insights/index.html">Insights</a>
+  </div>
+</header>
+
+<main class="page">
+  <section class="hero-card" aria-label="Product profile hero">
+
+    <!-- Top bar: breadcrumb + actions -->
+    <div class="hero-topbar">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span class="crumb-sep">›</span>
+        <a href="../index.html">Products</a>
+        <span class="crumb-sep">›</span>
+        <span class="crumb-current">Codex</span>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="ghost-btn" id="saveBtn" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6 2h12a1 1 0 0 1 1 1v18l-7-4-7 4V3a1 1 0 0 1 1-1z"/></svg>
+          Save
+        </button>
+        <button class="ghost-btn" id="shareBtn" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M18 16.1c-.8 0-1.4.3-2 .7l-6.2-3.6c.1-.3.1-.6.1-.9s0-.6-.1-.9L15.9 8c.5.5 1.2.8 2.1.8 1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3c0 .3 0 .6.1.9L9 9.3c-.5-.5-1.2-.8-2-.8-1.7 0-3 1.3-3 3s1.3 3 3 3c.8 0 1.5-.3 2-.8l6.1 3.6c-.1.3-.1.5-.1.8 0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3z"/></svg>
+          Share
+        </button>
+        <button class="ghost-btn" id="correctionBtn" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+          Suggest a data update
+        </button>
+      </div>
+    </div>
+
+    <!-- Main hero body -->
+    <div class="hero-body">
+
+      <div class="hero-left">
+        <span class="type-badge">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg>
+          AI Coding Agent
+        </span>
+
+        <h1 class="name">
+          Codex
+          <span class="verified-dot" tabindex="0" aria-describedby="verified-tip">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="11" fill="#0d9488"/><path d="M7 12.5 10.2 15.7 17 8.5" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="tooltip" id="verified-tip" role="tooltip">Product identity, category and offering company verified from official sources.</span>
+          </span>
+        </h1>
+
+        <p class="role-line"><strong>Offered by</strong><span class="sep">•</span><a href="#" class="company-link">OpenAI</a></p>
+
+        <p class="summary">
+          Codex is OpenAI's AI coding agent for software engineering work, from writing code and fixing bugs to running tests, reviewing changes and working across development environments.
+        </p>
+
+        <ul class="meta-row">
+          <li>
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h7v7H4V4zm9 0h7v7h-7V4zM4 13h7v7H4v-7zm9 0h7v7h-7v-7z"/></svg>
+            Developer Tools
+          </li>
+          <li class="meta-confidence">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm-1 14.4L6.6 11l1.4-1.4 3 3 5.6-5.6L18 8.4 11 15.4z"/></svg>
+            High Source Confidence
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"/></svg>
+            Last updated: 19 August 2026
+          </li>
+        </ul>
+
+        <div class="trust-chips" aria-label="Trust signals">
+          <span class="chip">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>
+            Verified Product
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg>
+            AI Developer Tool
+          </span>
+          <span class="chip">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4 21V9l8-6 8 6v12h-6v-7h-4v7H4z"/></svg>
+            Built by OpenAI
+          </span>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn-solid" id="followBtn" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 21s-6.7-4.3-9.5-8.1C.7 10.3 1.2 6.9 3.8 5.1 6 3.6 8.7 4.1 10.4 6l1.6 1.7L13.6 6c1.7-1.9 4.4-2.4 6.6-.9 2.6 1.8 3.1 5.2 1.3 7.8C18.7 16.7 12 21 12 21z"/></svg>
+            <span>Follow Product</span>
+          </button>
+          <button class="btn-outline" id="relatedProductsBtn" type="button">
+            Related Products
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <img class="portrait-photo" src="assets/codex-visual.svg" alt="Codex AI coding agent illustration">
+          <div class="portrait-overlay" aria-hidden="true"></div>
+          <button class="gallery-badge" id="surfacesBtn" type="button">
+            <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v6c0 5.5-3.8 8.7-9 10-5.2-1.3-9-4.5-9-10V5a1 1 0 0 1 1-1zm7.4 11.4 5.6-5.6-1.4-1.4-4.2 4.2-1.8-1.8-1.4 1.4 3.2 3.2z"/></svg>
+            <span>Available On<br><small>ChatGPT Â· IDE Â· CLI Â· Cloud</small></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Quick Facts -->
+  <section class="qf-card" aria-label="Quick facts">
+    <div class="qf-head">
+      <div class="qf-head-text">
+        <h2 class="qf-heading">Codex product facts</h2>
+        <p class="qf-sub">Key product, company and availability information curated from official sources and reliable public references.</p>
+      </div>
+    </div>
+
+    <div class="qf-grid" id="qfCore">
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg></span>
+        <div><span class="qf-item-label">Product Name</span><span class="qf-item-value">Codex</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 21V9l8-6 8 6v12h-6v-7h-4v7H4z"/></svg></span>
+        <div><span class="qf-item-label">Offered By</span><span class="qf-item-value">OpenAI</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 12c2.7 0 8 1.3 8 4v2H4v-2c0-2.7 5.3-4 8-4zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></span>
+        <div><span class="qf-item-label">Product Type</span><span class="qf-item-value">AI coding agent</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"/></svg></span>
+        <div><span class="qf-item-label">Launch Year / Date</span><span class="qf-item-value">2025</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg></span>
+        <div><span class="qf-item-label">Primary Use Case</span><span class="qf-item-value">Code generation, debugging, testing, code review, refactoring</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3zm-8 0c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h9.5c-.3-.6-.5-1.3-.5-2 0-2.2 2.2-4 5-4 .4 0 .8 0 1.2.1C15.4 15 12.2 13 8 13zm8 0c-2.8 0-5 1.6-5 3.5S13.2 20 16 20s5-1.6 5-3.5S18.8 13 16 13z"/></svg></span>
+        <div><span class="qf-item-label">Primary Users</span><span class="qf-item-value">Developers, engineering teams, product teams, technical founders</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v6c0 5.5-3.8 8.7-9 10-5.2-1.3-9-4.5-9-10V5a1 1 0 0 1 1-1zm7.4 11.4 5.6-5.6-1.4-1.4-4.2 4.2-1.8-1.8-1.4 1.4 3.2 3.2z"/></svg></span>
+        <div><span class="qf-item-label">Availability</span><span class="qf-item-value">Active product</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 4h16v4H4V4zm0 6h16v10H4V10zm3 3v4h6v-4H7z"/></svg></span>
+        <div><span class="qf-item-label">Available On</span><span class="qf-item-value">ChatGPT, IDE extension, CLI, cloud-based development workflows</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9 2h6v3H9V2zM7 7h10v2H7V7zm-2 4h14v11H5V11zm4 3v5h2v-5H9zm4 0v5h2v-5h-2z"/></svg></span>
+        <div><span class="qf-item-label">Category</span><span class="qf-item-value">Developer Tools</span></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1v3.5c4.4.5 8 4.3 8 8.5s-3.6 8-8 8.5V21c-5.5-.5-10-4.7-10-9.5S6.5 1.5 12 1zm-2 6-4 4 4 4v-3h4V11h-4V7z"/></svg></span>
+        <div><span class="qf-item-label">Pricing Model</span><span class="qf-item-value">Plan-based access / varies by OpenAI account or workspace</span></div>
+      </div>
+      <div class="qf-item qf-item-centered">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg></span>
+        <div><a class="qf-item-value qf-link" href="#">View Sources <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg></a></div>
+      </div>
+      <div class="qf-item">
+        <span class="qf-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v6c0 5.5-3.8 8.7-9 10-5.2-1.3-9-4.5-9-10V5a1 1 0 0 1 1-1zm7.4 11.4 5.6-5.6-1.4-1.4-4.2 4.2-1.8-1.8-1.4 1.4 3.2 3.2z"/></svg></span>
+        <div><span class="qf-item-label">Source Confidence</span><span class="qf-item-value">High</span></div>
+      </div>
+    </div>
+
+    <button class="qf-toggle" id="qfToggle" type="button" aria-expanded="false" aria-controls="qfExtra">
+      <span>View more facts</span>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+    </button>
+
+    <div class="qf-grid qf-grid-extra" id="qfExtra" hidden>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.3 5.8 21 7.3 14 2 9.3 9.1 8.6z"/></svg></span>
+        <div><span class="qf-item-label">Key Features</span><span class="qf-item-value">Code generation, repository understanding, debugging support, test running, code review, refactoring</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg></span>
+        <div><span class="qf-item-label">Access Type</span><span class="qf-item-value">Included with eligible plan / limited by workspace</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg></span>
+        <div><span class="qf-item-label">API Availability</span><span class="qf-item-value">Not publicly listed</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 4h16v4H4V4zm0 6h16v10H4V10zm3 3v4h6v-4H7z"/></svg></span>
+        <div><span class="qf-item-label">Supported Platforms</span><span class="qf-item-value">ChatGPT, IDE extension, Codex CLI, Cloud environment</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></span>
+        <div><span class="qf-item-label">Development Focus</span><span class="qf-item-value">Code changes, testing and review workflows</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 9h16M4 15h16M9 4 7 20m10-16-2 16"/></svg></span>
+        <div><span class="qf-item-label">Related Topics</span><span class="qf-item-value">AI Coding Agents, Code Generation, Agentic AI</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 21V8l6-4 6 4v3l6 4v6h-6v-4H9v4H3zM9 10h2v2H9v-2zm4 0h2v2h-2v-2zm-4 4h2v2H9v-2z"/></svg></span>
+        <div><span class="qf-item-label">Related Products</span><span class="qf-item-value">ChatGPT, OpenAI API, GPT-4</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm12 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM6 13a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm12 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM8.5 5.5h7M8.5 18.5h7M6 8v8m12-8v8"/></svg></span>
+        <div><span class="qf-item-label">Alternatives Count</span><span class="qf-item-value">6+ (GitHub Copilot, Cursor, Claude Code, Devin, Replit Agent, Amazon Q Developer)</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 1v3.5c4.4.5 8 4.3 8 8.5s-3.6 8-8 8.5V21c-5.5-.5-10-4.7-10-9.5S6.5 1.5 12 1zm-2 6-4 4 4 4v-3h4V11h-4V7z"/></svg></span>
+        <div><span class="qf-item-label">Free Tier / Trial</span><span class="qf-item-value">Not publicly listed</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-3zm-1 14.4L6.6 11l1.4-1.4 3 3 5.6-5.6L18 8.4 11 15.4z"/></svg></span>
+        <div><span class="qf-item-label">Verification Status</span><span class="qf-item-value">Verified product listing</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zM5 9h14v11H5V9z"/></svg></span>
+        <div><span class="qf-item-label">Last Verified</span><span class="qf-item-value">19 August 2026</span></div>
+      </div>
+      <div class="qf-item qf-item-extra">
+        <span class="qf-icon qf-icon-extra"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2 1 21h22L12 2zm0 5 7 12H5l7-12zm-1 5v3h2v-3h-2zm0 4v2h2v-2h-2z"/></svg></span>
+        <div><span class="qf-item-label">Data Gaps</span><span class="qf-item-value">Exact public launch date and free-tier terms are not fully published by OpenAI</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="ov-card" aria-label="Product overview">
+    <div class="ov-main">
+      <div class="ov-head">
+        <h2 class="ov-heading">Product Overview</h2>
+        <p class="ov-sub">Codex is built for people and teams who want AI help with real software development work, not just quick code suggestions.</p>
+      </div>
+
+      <hr class="ov-divider">
+
+      <div class="ov-left">
+        <p class="ov-para">
+          Codex is OpenAI's AI coding agent for software engineering tasks. It can help developers write code, understand existing repositories, fix bugs, refactor files, run tests and prepare changes for human review.
+        </p>
+
+        <button class="ov-seemore" id="ovSeeMore" type="button" aria-expanded="false" aria-controls="ovMore">
+          <span>See more</span>
+          <svg viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+
+        <div class="ov-more" id="ovMore" hidden>
+          <p class="ov-para">
+            Instead of working like a simple autocomplete tool, Codex is designed around task-based coding work. A user can describe what needs to be done, and Codex can work through the codebase, make changes, check results and return an update that a developer can review.
+          </p>
+          <p class="ov-para">
+            It is most useful for developers who need help with code changes and debugging, engineering teams running pull requests and code review, and technical founders or product teams who want to turn requirements into working changes faster.
+          </p>
+        </div>
+
+        <blockquote class="ov-quote">
+          <svg class="ov-quote-mark" viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M7.5 6C4.5 8 3 10.7 3 13.8c0 2.6 1.6 4.4 3.9 4.4 2 0 3.4-1.4 3.4-3.3 0-1.8-1.2-3.1-2.9-3.1-.3 0-.6 0-.8.1.3-1.9 1.8-3.7 3.7-4.8L7.5 6zm10 0c-3 2-4.5 4.7-4.5 7.8 0 2.6 1.6 4.4 3.9 4.4 2 0 3.4-1.4 3.4-3.3 0-1.8-1.2-3.1-2.9-3.1-.3 0-.6 0-.8.1.3-1.9 1.8-3.7 3.7-4.8L17.5 6z"/></svg>
+          <p class="ov-quote-text">"Codex is not meant to remove developers from the process. It works best as a coding agent that prepares useful work, runs available checks and gives developers a clearer starting point for final review."</p>
+          <footer class="ov-quote-attr">
+            <span class="ov-quote-name">— How Codex is designed to work</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+      <div class="ov-right">
+        <div class="ov-insight">
+          <div class="ov-insight-head">
+            <span class="ov-insight-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2 14.9 8.6 22 9.3 16.7 14 18.2 21 12 17.3 5.8 21 7.3 14 2 9.3 9.1 8.6z"/></svg></span>
+            <h3>What Codex Is Best For</h3>
+            <button class="ov-toggle" type="button" aria-expanded="false" aria-controls="ovInsight1" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
+            </button>
+          </div>
+          <p id="ovInsight1" hidden>Codex helps developers with code changes and debugging, supports engineering teams with pull requests and code review, and helps technical founders and product teams build and improve product code faster with AI support.</p>
+        </div>
+
+        <div class="ov-insight">
+          <div class="ov-insight-head">
+            <span class="ov-insight-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></span>
+            <h3>How Codex Fits the Workflow</h3>
+            <button class="ov-toggle" type="button" aria-expanded="false" aria-controls="ovInsight2" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
+            </button>
+          </div>
+          <p id="ovInsight2" hidden>Codex fits between task planning and human review — understanding a coding task, checking the codebase, making changes, running available tests, and handing off a clear summary for developer review.</p>
+        </div>
+
+        <div class="ov-insight">
+          <div class="ov-insight-head">
+            <span class="ov-insight-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm0-6 2.1 1.9L17 3.5l.6 2.8 2.8.6-.6 2.8L21.9 12 19.8 14.1l.6 2.8-2.8.6-.6 2.8-2.8-.6L12 22l-2.1-1.9L7 20.5l-.6-2.8-2.8-.6.6-2.8L2.1 12l2.1-2.1-.6-2.8 2.8-.6L7 3.5l2.9.4L12 2z"/></svg></span>
+            <h3>What Codex Doesn't Replace</h3>
+            <button class="ov-toggle" type="button" aria-expanded="false" aria-controls="ovInsight3" aria-label="Toggle details">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg>
+            </button>
+          </div>
+          <p id="ovInsight3" hidden>Codex is best treated as a coding assistant or agent that prepares work for human review. Developers still need to check logic, quality, security and final changes before merge or release.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Available On -->
+  <section class="section-card" aria-label="Available on">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Available On</h2>
+      <p class="qf-sub">Codex can be used across different development surfaces, from ChatGPT to editor, terminal and cloud-based coding workflows.</p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-badge">Main Surface</span>
+        <div class="info-card-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 4h16a1 1 0 0 1 1 1v6c0 5.5-3.8 8.7-9 10-5.2-1.3-9-4.5-9-10V5a1 1 0 0 1 1-1zm7.4 11.4 5.6-5.6-1.4-1.4-4.2 4.2-1.8-1.8-1.4 1.4 3.2 3.2z"/></svg></div>
+        <h3 class="info-title">ChatGPT</h3>
+        <p class="info-desc">Use Codex inside ChatGPT for coding tasks, repo work and guided development help.</p>
+        <a class="info-cta" href="#">Open Codex <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6z"/></svg></div>
+        <h3 class="info-title">IDE Extension</h3>
+        <p class="info-desc">Use Codex from supported code editors for in-project coding assistance.</p>
+        <a class="info-cta" href="#">View Setup <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M4 4h16v4H4V4zm0 6h16v10H4V10zm3 3v4h6v-4H7z"/></svg></div>
+        <h3 class="info-title">Codex CLI</h3>
+        <p class="info-desc">Run Codex from the terminal for local development and command-line workflows.</p>
+        <a class="info-cta" href="#">View CLI <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Team Workflow</span>
+        <div class="info-card-icon"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 1v3.5c4.4.5 8 4.3 8 8.5s-3.6 8-8 8.5V21c-5.5-.5-10-4.7-10-9.5S6.5 1.5 12 1zm-2 6-4 4 4 4v-3h4V11h-4V7z"/></svg></div>
+        <h3 class="info-title">Cloud Environment</h3>
+        <p class="info-desc">Let Codex work in a controlled cloud workspace with repo context and task handling.</p>
+        <a class="info-cta" href="#">Learn More <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <p class="sec-note">Availability may depend on the user's OpenAI account, workspace access, region and product setup.</p>
+    <a class="sec-cta" href="#">View Codex Access Options <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="section-card" aria-label="Use cases">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">How Teams Use Codex</h2>
+      <p class="qf-sub">Codex helps with practical software work, from small fixes to larger engineering tasks that need code changes, testing and review.</p>
+    </div>
+
+    <div class="info-grid info-grid-3">
+      <div class="info-card">
+        <span class="info-badge">Core Use</span>
+        <h3 class="info-title">Build New Features</h3>
+        <p class="info-desc">Turn a task or product request into code changes across the project.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Core Use</span>
+        <h3 class="info-title">Fix Bugs</h3>
+        <p class="info-desc">Review the issue, inspect relevant files and prepare a fix for developer review.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Refactor Code</h3>
+        <p class="info-desc">Improve code structure, clean repeated logic and update older patterns.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Run Tests</h3>
+        <p class="info-desc">Use available test commands or suggest checks to confirm whether changes work.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Review</span>
+        <h3 class="info-title">Review Pull Requests</h3>
+        <p class="info-desc">Check code changes for bugs, risks, missing tests or possible improvements.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Maintain Codebases</h3>
+        <p class="info-desc">Handle routine updates, dependency-related tasks and small maintenance work.</p>
+        <a class="info-cta" href="#">View Example <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="tag-row">
+      <span class="tag-label">Also used for:</span>
+      <span class="tag-chip">Write documentation</span>
+      <span class="tag-chip">Explain unfamiliar code</span>
+      <span class="tag-chip">Prepare migration changes</span>
+      <span class="tag-chip">Create test coverage</span>
+      <span class="tag-chip">Triage engineering tasks</span>
+    </div>
+
+    <a class="sec-cta" href="#">Explore AI Coding Agent Use Cases <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Pricing & Access -->
+  <section class="section-card" aria-label="Pricing and access">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Codex pricing and access</h2>
+      <p class="qf-sub">Automatically updated pricing, plans, and access information extracted from OpenAI's official website. Data is regularly checked and may change.</p>
+    </div>
+
+    <div class="summary-strip">
+      <div class="summary-item"><small>Pricing Model</small><strong>Plan-based / Paid access</strong></div>
+      <div class="summary-item"><small>Billing Cycle</small><strong>Auto-detected from source</strong></div>
+      <div class="summary-item"><small>Free Plan</small><strong>Shown if publicly available</strong></div>
+      <div class="summary-item"><small>Free Trial</small><strong>Shown if publicly available</strong></div>
+      <div class="summary-item"><small>Available On</small><strong>ChatGPT, IDE, CLI, Cloud</strong></div>
+      <div class="summary-item"><small>For</small><strong>Developers &amp; teams</strong></div>
+    </div>
+
+    <div class="pricing-layout">
+      <div class="pricing-plans">
+        <div class="plan-card">
+          <h3 class="info-title">Included with ChatGPT Plan</h3>
+          <p class="plan-price">Included <span>/ eligible plan</span></p>
+          <p class="info-desc">Billing: Included with plan Â· Target: Individual users</p>
+          <p class="info-desc">Access: Standard usage limits apply</p>
+          <a class="info-cta" href="#">View Plan <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        </div>
+        <div class="plan-card">
+          <h3 class="info-title">ChatGPT Team / Enterprise</h3>
+          <p class="plan-price">Included <span>/ workspace plan</span></p>
+          <p class="info-desc">Billing: Included with plan Â· Target: Business / Enterprise</p>
+          <p class="info-desc">Access: Higher limits, admin controls</p>
+          <a class="info-cta" href="#">Contact Sales <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        </div>
+        <div class="plan-card">
+          <h3 class="info-title">API / Usage-based</h3>
+          <p class="plan-price">Usage-based <span>/ varies</span></p>
+          <p class="info-desc">Billing: Usage-based Â· Target: Developers, custom integrations</p>
+          <p class="info-desc">Access: Custom, depends on usage</p>
+          <a class="info-cta" href="#">View Pricing <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="pricing-side">
+        <div class="side-block">
+          <h4>About Pricing Data</h4>
+          <p>Codex pricing and access details are collected from OpenAI's official product and pricing sources. If a source doesn't publish an exact price, this page will not invent one — it shows "Included with eligible plan", "Contact Sales" or "Not publicly listed" instead.</p>
+        </div>
+        <div class="side-block">
+          <h4>Access &amp; Eligibility</h4>
+          <p>Available through ChatGPT, IDE extension, Codex CLI and Cloud environment. Availability can depend on account, workspace, region and product setup.</p>
+        </div>
+        <div class="side-block">
+          <h4>Official Links</h4>
+          <p><a class="qf-link" href="#">View Codex Pricing / Access <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-strip">
+      <div class="summary-item"><small>Price Range</small><strong>Included – Custom</strong></div>
+      <div class="summary-item"><small>Payment Methods</small><strong>Not publicly listed</strong></div>
+      <div class="summary-item"><small>Last Pricing Check</small><strong>19 August 2026 Â· Auto-checked</strong></div>
+      <div class="summary-item"><small>Source Confidence</small><strong>High</strong></div>
+    </div>
+  </section>
+
+  <!-- Core Capabilities -->
+  <section class="section-card" aria-label="Core capabilities">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Core Capabilities</h2>
+      <p class="qf-sub">Codex supports the main parts of agentic software work: understanding code, making changes, checking results and preparing work for review.</p>
+    </div>
+
+    <div class="badge-row">
+      <span class="chip">Understand</span>
+      <span class="chip">Change</span>
+      <span class="chip">Check</span>
+      <span class="chip">Review</span>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3 class="info-title">Code Generation</h3>
+        <p class="info-desc">Creates or updates code from a task, issue or product request.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Repository Understanding</h3>
+        <p class="info-desc">Reads project structure, files and context before making changes.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">File Editing</h3>
+        <p class="info-desc">Modifies relevant files and prepares changes for review.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Debugging Support</h3>
+        <p class="info-desc">Inspects errors, traces likely causes and prepares fixes.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Test Running</h3>
+        <p class="info-desc">Runs available test commands where the environment supports it.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Code Review</h3>
+        <p class="info-desc">Checks changes for bugs, regressions, missing tests or risky logic.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Refactoring</h3>
+        <p class="info-desc">Improves structure and updates older patterns without changing intent.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Task Handoff</h3>
+        <p class="info-desc">Returns a clear summary of changes, checks and next review needs.</p>
+      </div>
+    </div>
+
+    <p class="sec-note">Exact capabilities may vary by product surface, account access, project setup and available tools.</p>
+    <a class="sec-cta" href="#">Compare AI Coding Tools <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Developer Workflow Fit -->
+  <section class="section-card" aria-label="Developer workflow fit">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Where Codex Fits in the Workflow</h2>
+      <p class="qf-sub">Codex fits between task planning and human review, helping developers move from request to checked code faster.</p>
+    </div>
+
+    <div class="workflow-steps">
+      <div class="workflow-step">
+        <span class="workflow-num">1</span>
+        <h3 class="info-title">Task Input</h3>
+        <p class="info-desc">A developer, founder or team gives Codex a coding task, issue or product request.</p>
+        <span class="info-badge">Start</span>
+      </div>
+      <div class="workflow-step">
+        <span class="workflow-num">2</span>
+        <h3 class="info-title">Codebase Review</h3>
+        <p class="info-desc">Relevant files, project structure and existing patterns are checked before changes.</p>
+      </div>
+      <div class="workflow-step">
+        <span class="workflow-num">3</span>
+        <h3 class="info-title">Code Changes</h3>
+        <p class="info-desc">Code is written, edited, refactored or fixed based on the task.</p>
+        <span class="info-badge">Build</span>
+      </div>
+      <div class="workflow-step">
+        <span class="workflow-num">4</span>
+        <h3 class="info-title">Testing &amp; Checks</h3>
+        <p class="info-desc">Available tests, commands or review steps are used where supported.</p>
+        <span class="info-badge">Check</span>
+      </div>
+      <div class="workflow-step">
+        <span class="workflow-num">5</span>
+        <h3 class="info-title">Human Review</h3>
+        <p class="info-desc">A developer reviews the final changes before merge, release or deployment.</p>
+        <span class="info-badge">Review</span>
+      </div>
+    </div>
+
+    <blockquote class="ov-quote">
+      <svg class="ov-quote-mark" viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M7.5 6C4.5 8 3 10.7 3 13.8c0 2.6 1.6 4.4 3.9 4.4 2 0 3.4-1.4 3.4-3.3 0-1.8-1.2-3.1-2.9-3.1-.3 0-.6 0-.8.1.3-1.9 1.8-3.7 3.7-4.8L7.5 6zm10 0c-3 2-4.5 4.7-4.5 7.8 0 2.6 1.6 4.4 3.9 4.4 2 0 3.4-1.4 3.4-3.3 0-1.8-1.2-3.1-2.9-3.1-.3 0-.6 0-.8.1.3-1.9 1.8-3.7 3.7-4.8L17.5 6z"/></svg>
+      <p class="ov-quote-text">Codex is not meant to remove developers from the process. It works best as a coding agent that prepares useful work, runs available checks and gives developers a clearer starting point for final review.</p>
+    </blockquote>
+
+    <div class="info-grid info-grid-2">
+      <div class="info-card">
+        <h3 class="info-title">Faster task execution</h3>
+        <p class="info-desc">Turns small issues or product requests into review-ready code changes.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Cleaner maintenance work</h3>
+        <p class="info-desc">Helps with repeated fixes, refactors and updates across a codebase.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Better review preparation</h3>
+        <p class="info-desc">Summarizes changes and highlights checks before a developer reviews the work.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Support for busy teams</h3>
+        <p class="info-desc">Handles focused coding tasks while engineers stay in control of final decisions.</p>
+      </div>
+    </div>
+
+    <a class="sec-cta" href="#">Explore Developer Workflows <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Alternatives -->
+  <section class="section-card" aria-label="Alternatives">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Codex Alternatives</h2>
+      <p class="qf-sub">Codex sits in a growing group of AI coding tools. Some focus on editor autocomplete, some on agentic coding, and some on full software task execution.</p>
+    </div>
+
+    <div class="info-grid info-grid-3">
+      <div class="info-card">
+        <span class="info-badge">Popular</span>
+        <h3 class="info-title">GitHub Copilot</h3>
+        <p class="info-desc"><em>GitHub / Microsoft</em> — AI code suggestions inside developer workflows. Strong for editor-based coding help and developer productivity.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">AI Editor</span>
+        <h3 class="info-title">Cursor</h3>
+        <p class="info-desc"><em>Anysphere</em> — AI-first code editor with chat, codebase context and agent-style editing.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Agentic Tool</span>
+        <h3 class="info-title">Claude Code</h3>
+        <p class="info-desc"><em>Anthropic</em> — Terminal-based agentic coding for codebase tasks. Strong for command-line coding workflows and repo-level work.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Devin</h3>
+        <p class="info-desc"><em>Cognition</em> — AI software engineering agent for larger task execution and autonomous engineering task handling.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Replit Agent</h3>
+        <p class="info-desc"><em>Replit</em> — Building and editing apps inside Replit's cloud workspace. Strong for cloud app building and fast prototyping.</p>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Amazon Q Developer</h3>
+        <p class="info-desc"><em>Amazon Web Services</em> — AI assistance for development, AWS workflows and enterprise coding tasks.</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Compare By</th><th>What Users Should Check</th></tr></thead>
+        <tbody>
+          <tr><td>Where It Works</td><td>Editor, terminal, ChatGPT, cloud workspace or browser-based environment.</td></tr>
+          <tr><td>Depth of Coding Help</td><td>Autocomplete, chat help, file edits, repo-level changes or agentic task work.</td></tr>
+          <tr><td>Team Fit</td><td>Solo developer, startup team, enterprise engineering team or cloud-first builder.</td></tr>
+          <tr><td>Review Control</td><td>How clearly the tool shows changes, checks and final review needs.</td></tr>
+          <tr><td>Pricing / Access</td><td>Plan limits, workspace access, enterprise options and included usage.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <a class="sec-cta" href="#">Compare All AI Coding Tools <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Offered By -->
+  <section class="section-card" aria-label="Offered by">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Offered By</h2>
+      <p class="qf-sub">Codex is offered by OpenAI, the AI research and product company behind ChatGPT, OpenAI API products and Codex.</p>
+    </div>
+
+    <div class="company-profile">
+      <div class="company-profile-main">
+        <h3 class="info-title">OpenAI</h3>
+        <p class="info-desc"><strong>Company Type:</strong> AI research and product company</p>
+        <p class="info-desc"><strong>Known For:</strong> ChatGPT, OpenAI API, AI models and Codex</p>
+        <p class="info-desc"><strong>Primary Product Area:</strong> Artificial intelligence, developer tools and AI-powered productivity</p>
+        <p class="info-desc"><strong>Website:</strong> openai.com</p>
+        <p class="ov-para" style="margin-top:12px;">Codex is part of OpenAI's product ecosystem. It connects OpenAI's AI model capabilities with software engineering workflows, helping developers and teams work on code through ChatGPT, editor, terminal and cloud-based environments.</p>
+      </div>
+      <div class="company-links">
+        <h4>Related OpenAI Products</h4>
+        <a class="qf-link company-link-item" href="#">ChatGPT <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        <a class="qf-link company-link-item" href="#">OpenAI API <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        <a class="qf-link company-link-item" href="#">ChatGPT Business / Enterprise <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+        <a class="qf-link company-link-item" href="#">Codex Docs <svg viewBox="0 0 24 24" width="12" height="12"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <a class="sec-cta" href="#">View OpenAI Profile <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Leadership Behind Codex -->
+  <section class="section-card" aria-label="Leadership behind Codex">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Leadership Behind Codex</h2>
+      <p class="qf-sub">Codex is not a standalone founder-led product. It is developed by OpenAI, so the most relevant people are OpenAI leaders connected to the company's product, engineering and AI direction.</p>
+    </div>
+
+    <div class="info-grid info-grid-3">
+      <div class="info-card">
+        <span class="info-badge">Company Leader</span>
+        <h3 class="info-title">Sam Altman</h3>
+        <p class="info-desc"><em>CEO, OpenAI</em> — Leads OpenAI, the company behind Codex, ChatGPT and OpenAI's broader AI product direction.</p>
+        <a class="info-cta" href="#">View Profile <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Technical Leadership</span>
+        <h3 class="info-title">Greg Brockman</h3>
+        <p class="info-desc"><em>President, OpenAI</em> — Connected to OpenAI's technical and product direction, including engineering-focused AI work.</p>
+        <a class="info-cta" href="#">View Profile <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">OpenAI Product &amp; Engineering Team</h3>
+        <p class="info-desc"><em>Team behind OpenAI products</em> — Codex is a company-built coding agent, shaped by OpenAI's product and engineering work rather than a single public founder.</p>
+        <a class="info-cta" href="#">View OpenAI <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <p class="sec-note">Codex should not be presented as having a separate public founder. It is best shown as an OpenAI product with relevant company leadership and team connection.</p>
+  </section>
+
+  <!-- Related Topics -->
+  <section class="section-card" aria-label="Related topics">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Related Topics</h2>
+      <p class="qf-sub">Codex connects with several AI, software and developer-tool topics that help users understand the wider market around AI coding agents.</p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card info-card-primary">
+        <span class="info-badge">Main Topic</span>
+        <h3 class="info-title">AI Coding Agents</h3>
+        <p class="info-desc">Codex belongs most directly to this topic because it can work on software tasks, edit code, run checks and prepare work for review.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Code Generation</h3>
+        <p class="info-desc">Codex can help create and update code from task instructions, issues or product requests.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">AI Code Review</h3>
+        <p class="info-desc">Codex can review changes, flag possible risks and support human code review workflows.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Developer Tools</h3>
+        <p class="info-desc">Codex fits into the broader developer-tool category because it supports software engineering work.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Agentic AI</h3>
+        <p class="info-desc">Codex works as an agent-style product that can handle multi-step coding tasks with context.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Software Testing</h3>
+        <p class="info-desc">Codex can help run or suggest checks where the project environment supports testing.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">CLI Tools</h3>
+        <p class="info-desc">Codex connects with terminal-based workflows through Codex CLI and command-line usage.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">AI Productivity Tools</h3>
+        <p class="info-desc">Codex supports productivity by helping teams reduce manual coding, review and maintenance effort.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Prompt Engineering for Developers</h3>
+        <p class="info-desc">Developers need clear task instructions to get better coding-agent results from tools like Codex.</p>
+        <a class="info-cta" href="#">View Topic <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <a class="sec-cta" href="#">See More Related Topics <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Industry Connection -->
+  <section class="section-card" aria-label="Industry connection">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Industry Connection</h2>
+      <p class="qf-sub">Codex mainly fits under Artificial Intelligence Software, with natural links to developer tools, software development, cloud workflows and enterprise technology.</p>
+    </div>
+
+    <div class="info-grid info-grid-3">
+      <div class="info-card info-card-primary">
+        <span class="info-badge">Main Industry</span>
+        <h3 class="info-title">Artificial Intelligence Software</h3>
+        <p class="info-desc">Codex is an AI-powered software product built for coding, code review, testing and software engineering workflows.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Software Development</h3>
+        <p class="info-desc">Codex supports feature building, bug fixing, refactoring and code maintenance.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Developer Tools</h3>
+        <p class="info-desc">Codex works directly inside developer workflows across ChatGPT, editor, terminal and cloud environments.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Cloud Computing</h3>
+        <p class="info-desc">Codex can connect with cloud-based workspaces, remote environments and repo-level task handling.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">DevOps</h3>
+        <p class="info-desc">Codex relates to testing, pull requests, CI/CD checks, issue handling and release-support workflows.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Enterprise Software</h3>
+        <p class="info-desc">Teams can use Codex to support internal product development, review work and codebase maintenance.</p>
+        <a class="info-cta" href="#">View Industry <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <a class="sec-cta" href="#">See More Related Industries <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- Related Insights -->
+  <section class="section-card" aria-label="Related insights">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Related Insights</h2>
+      <p class="qf-sub">Explore articles, guides and comparisons that help users understand Codex, AI coding agents and the wider developer-tool market.</p>
+    </div>
+
+    <div class="info-grid info-grid-3">
+      <div class="info-card">
+        <span class="info-badge">Recommended</span>
+        <h3 class="info-title">What Are AI Coding Agents?</h3>
+        <p class="info-desc"><em>Guide</em> — Explains the broader category Codex belongs to and how coding agents differ from normal code assistants.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <span class="info-badge">Comparison</span>
+        <h3 class="info-title">Codex vs GitHub Copilot: Key Differences</h3>
+        <p class="info-desc"><em>Comparison</em> — Helps users compare Codex with one of the most familiar AI coding tools.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Best AI Coding Tools for Developers</h3>
+        <p class="info-desc"><em>List</em> — Places Codex alongside other tools like Cursor, Claude Code, Devin and Replit Agent.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">How AI Code Review Tools Work</h3>
+        <p class="info-desc"><em>Explainer</em> — Connects with Codex's review and quality-check use cases.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Agentic AI in Software Development</h3>
+        <p class="info-desc"><em>Analysis</em> — Explains how multi-step AI agents are changing coding, testing and engineering workflows.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+      <div class="info-card">
+        <h3 class="info-title">Using AI Tools Without Losing Code Quality</h3>
+        <p class="info-desc"><em>Guide</em> — Useful for teams that want AI speed but still need human review, tests and clean delivery.</p>
+        <a class="info-cta" href="#">Read Insight <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+      </div>
+    </div>
+
+    <a class="sec-cta" href="#">See More Codex Insights <svg viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M8.6 5.4 15.2 12l-6.6 6.6L10 20l8-8-8-8z"/></svg></a>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-card" aria-label="Frequently asked questions">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Frequently Asked Questions</h2>
+      <p class="qf-sub">Quick answers to common questions about Codex, its use cases, access and how it compares with other AI coding tools.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq1">
+          <span class="faq-num">1</span>
+          <span class="faq-question">What is Codex?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq1" class="faq-answer" hidden>Codex is OpenAI's AI coding agent for software engineering tasks. It can help write code, fix bugs, review changes, run checks and work with project context.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq2">
+          <span class="faq-num">2</span>
+          <span class="faq-question">Who offers Codex?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq2" class="faq-answer" hidden>Codex is offered by OpenAI, the company behind ChatGPT and other AI products.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq3">
+          <span class="faq-num">3</span>
+          <span class="faq-question">Is Codex only for developers?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq3" class="faq-answer" hidden>Codex is mainly built for developers and engineering teams, but technical founders and product teams can also use it for software-related work.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq4">
+          <span class="faq-num">4</span>
+          <span class="faq-question">Where can Codex be used?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq4" class="faq-answer" hidden>Codex can be used across OpenAI-supported coding surfaces such as ChatGPT, editor workflows, terminal workflows and cloud-based coding environments, depending on access and setup.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq5">
+          <span class="faq-num">5</span>
+          <span class="faq-question">What can Codex help with?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq5" class="faq-answer" hidden>Codex can help with code generation, debugging, refactoring, testing, code review, documentation and maintenance tasks.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq6">
+          <span class="faq-num">6</span>
+          <span class="faq-question">Is Codex the same as GitHub Copilot?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq6" class="faq-answer" hidden>No. Both are AI coding tools, but they may differ in product surface, workflow style, task depth and how they support agentic coding work.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq7">
+          <span class="faq-num">7</span>
+          <span class="faq-question">Can Codex replace developers?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq7" class="faq-answer" hidden>No. Codex is best treated as a coding assistant or agent that prepares work for human review. Developers still need to check logic, quality, security and final changes.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-row ov-toggle" type="button" aria-expanded="false" aria-controls="faq8">
+          <span class="faq-num">8</span>
+          <span class="faq-question">Is Codex free?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+        </button>
+        <p id="faq8" class="faq-answer" hidden>Access and pricing may depend on OpenAI plans, account type, workspace setup and product availability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust & Source Confidence -->
+  <section class="section-card" aria-label="Source confidence">
+    <div class="qf-head-text sec-head">
+      <h2 class="qf-heading">Source Confidence</h2>
+      <p class="qf-sub">How certain each part of this profile is, checked against official OpenAI sources.</p>
+    </div>
+
+    <p class="sources-count">Sources checked (8)</p>
+
+    <div class="source-list" id="sourceCore">
+      <div class="source-row">
+        <span class="source-num">1</span>
+        <div class="source-text">
+          <a class="source-title" href="#">Codex — Product Overview</a>
+          <span class="source-url">openai.com/codex</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">2</span>
+        <div class="source-text">
+          <a class="source-title" href="#">OpenAI API Pricing</a>
+          <span class="source-url">openai.com/api/pricing</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">3</span>
+        <div class="source-text">
+          <a class="source-title" href="#">Codex CLI Documentation</a>
+          <span class="source-url">developers.openai.com/codex/cli</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">4</span>
+        <div class="source-text">
+          <a class="source-title" href="#">New Tools for Building Agents — Responses API Launch</a>
+          <span class="source-url">openai.com/index/new-tools-for-building-agents</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">5</span>
+        <div class="source-text">
+          <a class="source-title" href="#">Business Data Privacy, Security &amp; Compliance</a>
+          <span class="source-url">openai.com/business-data</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+    </div>
+
+    <div class="source-list" id="sourceExtra" hidden>
+      <div class="source-row">
+        <span class="source-num">6</span>
+        <div class="source-text">
+          <a class="source-title" href="#">Enterprise Privacy at OpenAI</a>
+          <span class="source-url">openai.com/enterprise-privacy</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">7</span>
+        <div class="source-text">
+          <a class="source-title" href="#">How Your Data Is Used to Improve Model Performance</a>
+          <span class="source-url">openai.com/policies/how-your-data-is-used-to-improve-model-performance</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+      <div class="source-row">
+        <span class="source-num">8</span>
+        <div class="source-text">
+          <a class="source-title" href="#">OpenAI Platform Documentation</a>
+          <span class="source-url">platform.openai.com/docs</span>
+        </div>
+        <svg class="source-ext" viewBox="0 0 24 24" width="15" height="15"><path fill="currentColor" d="M14 3h7v7h-2V6.4l-9.3 9.3-1.4-1.4L17.6 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+      </div>
+    </div>
+
+    <button class="qf-toggle" id="sourceToggle" type="button" aria-expanded="false" aria-controls="sourceExtra">
+      <span>Show more sources</span>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.7 8.7 12 14l5.3-5.3 1.4 1.4L12 16.8 5.3 10.1z"/></svg>
+    </button>
+
+    <div class="note-card">
+      <svg class="note-icon" viewBox="0 0 24 24" width="17" height="17"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <p><strong>Update trigger:</strong> review this profile when OpenAI changes Codex pricing, its product lineup, or access/regional policies. Sources are drawn from OpenAI's official product pages, developer documentation and policy pages.</p>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta-card" aria-label="Bottom call to action">
+    <h2 class="bottom-cta-heading">Ready to Explore Codex?</h2>
+    <p class="bottom-cta-sub">Check Codex from OpenAI, compare it with other AI coding tools, or suggest an update if any product details need review.</p>
+    <div class="bottom-cta-actions">
+      <a class="btn-solid btn-cta-light" href="#">Visit Codex</a>
+      <a class="btn-outline btn-cta-outline-light" href="#">Compare Alternatives</a>
+      <a class="btn-outline btn-cta-outline-light" href="#">Suggest a Data Update</a>
+    </div>
+    <div class="bottom-cta-links">
+      <a href="#">View OpenAI Profile</a>
+      <a href="#">Explore AI Coding Agents</a>
+      <a href="#">See More AI Software Products</a>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer id="bm-footer">
+  <div class="bm-footer-inner">
+    <div class="bm-footer-brand">
+      <a href="../../index.html" class="bm-logo" aria-label="BizMend home">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+          <rect width="30" height="30" rx="8" fill="#0d9488"/>
+          <circle cx="15" cy="9" r="2.6" fill="#fff"/>
+          <circle cx="8" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <circle cx="22" cy="20" r="2.6" fill="#fff" fill-opacity=".85"/>
+          <path d="M15 11.4V16M15 16L8 18M15 16L22 18" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span class="bm-logo-word">Biz<span>Mend</span></span>
+      </a>
+      <p>Connected business discovery and intelligence platform — companies, founders, topics, markets, reports and insights in one place.</p>
+    </div>
+
+    <nav class="bm-footer-col" aria-label="Discover">
+      <h4>Discover</h4>
+      <a href="../../companies/index.html">Companies</a>
+      <a href="../../founders/index.html">Founders</a>
+      <a href="../../products/index.html">Products</a>
+      <a href="../../services/index.html">Services</a>
+    </nav>
+
+    <nav class="bm-footer-col" aria-label="Explore">
+      <h4>Explore</h4>
+      <a href="../../topics/index.html">Topics</a>
+      <a href="../../industries/index.html">Industries</a>
+      <a href="../../countries/index.html">Countries</a>
+      <a href="../../cities/index.html">Cities</a>
+      <a href="../../reports/index.html">Reports</a>
+      <a href="../../insights/index.html">Insights</a>
+    </nav>
+
+    <nav class="bm-footer-col" aria-label="Featured profiles">
+      <h4>Featured Profiles</h4>
+      <a href="../../companies/openai/index.html">OpenAI</a>
+      <a href="../../founders/sam-altman/index.html">Sam Altman</a>
+      <a href="../../countries/united-states/index.html">United States</a>
+      <a href="../../cities/new-york-city/index.html">New York City</a>
+    </nav>
+
+    <nav class="bm-footer-col" aria-label="More">
+      <h4>More</h4>
+      <a href="../../topics/digital-banking/index.html">Digital Banking Topic</a>
+      <a href="../../industries/artificial-intelligence-software/index.html">AI Software Industry</a>
+      <a href="../../seo/top-digital-marketing-companies-in-dhaka/index.html">Dhaka Marketing Companies</a>
+    </nav>
+  </div>
+
+  <div class="bm-footer-bottom">
+    <span>© <span id="bmFooterYear"></span> BizMend. All rights reserved.</span>
+    <div class="bm-footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="../../shared/bm-chrome.js"></script>
+</body>
+</html>
+
